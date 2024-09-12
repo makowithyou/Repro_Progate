@@ -1,0 +1,403 @@
+/* 共通 css */
+body {
+    margin: unset;
+}
+ul {
+    list-style: none;
+    padding: unset;
+    margin: unset;
+}
+a {
+    text-decoration: none;
+}
+a.button, details {
+    color: #2b546a;
+    border-radius: 5px;
+    padding-top: 1em;
+    padding-right: 1.5em;
+    padding-bottom: 1em;
+    padding-left: 1.5em;
+}
+a.red {
+    color: #fff;
+    background-color: #fc5476;
+}
+a.white {
+    color: #2b546a;
+    background-color: #f0f4f9;
+}
+/* 文字サイズ・色 */
+h1, h2, h3, summary {
+    text-align: center;
+    color: #2b546a;
+}
+h2 {
+    font-size: 17px;
+}
+a {
+    color: #0070d2;
+    font-size: 12px;
+}
+p {
+    color: #8491a5;
+    font-size: 12px;
+}
+details, summary {
+    font-size: 12px;
+}
+section {
+    padding-top: 2em;
+    padding-right: 1em;
+    padding-bottom: 2em;
+    padding-left: 1em;
+}
+
+/* 狭い画面向けの既定の CSS レイアウト値 */
+header {
+    position: fixed;
+    background-color: #ffff;
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.7em;
+    padding-right: 1em;
+    padding-bottom: 0.7em;
+    padding-left: 1em;
+}
+header img.logo_pc {
+    display: none;
+}
+header img.logo_sp {
+    width: 30px;
+    height: 30px;
+}
+header nav ul {
+    display: flex;
+    align-items: center;
+}
+header nav ul li:first-of-type {
+    display: none;
+}
+header nav details summary {
+    list-style: unset;
+}
+header nav details summary::after {
+    content: "▼";
+    font-size: 10px;
+    margin-left: 0.5em;
+}
+header nav details[open] div {
+    position: absolute;
+    margin-top: calc(1em + 2px);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 2px 1px #4040405e;
+}
+header nav details[open] a {
+    background-color: #fff;
+    padding-top: 1.5em;
+    padding-right: 10em;
+    padding-bottom: 1.5em;
+    padding-left: 2em;
+}
+header nav details[open] a.selected {
+    background-color: #f0f4f9;
+}
+main {
+    padding-top: 60px;
+}
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main section.CAT_top div {
+    display: flex;
+    align-items: center;
+}
+main section.CAT_top img {
+    width: 40px;
+    height: 40px;
+}
+main section.CAT_top p {
+    display: inline;
+    font-weight: bold;
+}
+main section.CAT_top p > span {
+    color: #2b546a;
+}
+main section.CAT_top a.button {
+    font-size: 14px;
+    padding-left: 2.5em ;
+    padding-right: 2.5em ;
+    margin-top: 1em;
+}
+main section.first_view {
+    padding: unset;
+}
+main section.first_view > div {
+    background-color: #88e7ce;
+    padding-top: 3em;
+}
+main section.first_view img {
+    width: 100%;
+    margin-left: 1em;
+}
+main section.first_view h2 {
+    align-self: stretch;
+    margin-top: 2em;
+    margin-bottom: unset;
+    text-align-last: justify;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 1.5em;
+}
+main section.about img {
+    overflow-x: scroll;
+    width: 130%;
+}
+main section.about h2 {
+    text-align: start;
+}
+main section.about p {
+    line-height: 2em;
+    letter-spacing: 0.1em;
+    padding-bottom: 4em;
+}
+main section.success_story {
+    background-color: #2b546a;
+}
+main section.success_story h2 {
+    color: #ffff;
+    margin-bottom: unset;
+}
+main section.success_story > p {
+    color: #ffff;
+    text-align: start;
+    line-height: 2em;
+    letter-spacing: 0.1em;
+    margin-bottom: 3em;
+}
+main section.success_story div.box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding-top: 0.5em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    margin-bottom: 1em;
+}
+main section.success_story div.box:nth-of-type(n + 4) {
+    display: none;
+}
+main section.success_story div.box h3 {
+    font-size: 14px;
+    text-align: start;
+    line-height: 1.5em;
+    letter-spacing: 0.4px;
+}
+main section.success_story div.box div.img-names {
+    display: flex;
+    align-items: center;
+}
+main section.success_story  div.box div.img-names img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 1em;
+}
+main section.success_story div.box div.img-names div.name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: bold;
+}
+main section.success_story div.box div.img-names div.name p {
+    color: #bac6d3;
+    margin: unset;
+}
+main section.success_story div.box div.img-names div.name p:first-child {
+    font-size: 14px;
+}
+main section.success_story a {
+    margin-top: 1em;
+    font-size: 12px;
+    padding-right: 2em;
+    padding-left: 2em;
+}
+main section.plan {
+    padding-top: 3em;
+    align-items: flex-start;
+}
+main section.plan div {
+    background-color: #f0f4f9;
+    border-radius: 10px;
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+main section.plan div:first-of-type {
+    padding-bottom: unset;
+    text-align: unset;
+}
+main section.plan div:last-of-type {
+    background-color: #f7edad;
+}
+main section.plan div img {
+    margin-top: 1.5em;
+    margin-left: 2em;
+    width: 60%;
+    position: relative;
+    bottom: -5px;
+}
+main section.plan div p:first-of-type {
+    margin-bottom: 4em;
+    font-weight: unset;
+}
+main section.plan div p {
+    font-weight: bold;
+    color: #2b546a;
+}
+main section.plan p:last-of-type {
+    font-size: 14px;
+}
+main section.plan div p span.yen {
+    font-size: 1.5em;
+}
+main section.plan div p span.price {
+    font-size: 2em;
+}
+main section.app p {
+    text-align: center;
+    margin-bottom: 3em;
+}
+main section.app div {
+    background-color: #90c3f0;
+    padding-top: 2em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+}
+main section.app h3 {
+    color: #fff;
+    font-size: 1em;
+    text-align: start;
+}
+main section.app div p {
+    color: #fff;
+    text-align: start;
+}
+main section.app img {
+    width: 100%;
+}
+main section.app div.app-badges {
+    display: flex;
+}
+main section.app div.app-badges img {
+    width: 50%;
+    object-fit: contain;
+}
+main section.app div.app-badges img:first-of-type {
+    padding-right: 1em;
+}
+main section.last_view h2 {
+    text-align: start;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+main section.last_view p {
+    text-align: start;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+main section.CAT_bottom p {
+    margin-bottom: 2em;
+}
+main section.CAT_bottom a {
+    padding-right: 3em;
+    padding-left: 3em;
+}
+main div.sns  {
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+    padding-bottom: 2em;
+    border-bottom: solid 1px #eeeff1;
+}
+main div.sns img {
+    width: 20px;
+    height: 20px;
+}
+main div.sns img:first-of-type {
+    padding-right: 2em;
+}
+footer div.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer div.app img:first-child {
+    width:  135px;;
+}
+footer div.app p {
+    font-size: 1em;
+    margin: unset;
+}
+footer div.app div.app-badges {
+    display: flex;
+    justify-content: center;
+}
+footer div.app div.app-badges img {
+    width: 35%;
+    object-fit: contain;
+}
+footer div.about {
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer div.about p {
+    color: #2b546a;
+    font-weight: bold;
+    font-size: 1em;
+}
+footer div.about ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer div.about ul li {
+    padding-top: 1em;
+}
+footer div.about ul a {
+    color: #2b546a;
+}
+footer div.related_services {
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer div.related_services p {
+    color: #2b546a;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+@media (min-width: 480px) {
+  /* 中型の画面向けの CSS */
+}
+
+@media (min-width: 800px) {
+  /* 広い画面向けの CSS */
+}
+
+@media (min-width: 1100px) {
+  /* 本当に広い画面向けの CSS */
+}
