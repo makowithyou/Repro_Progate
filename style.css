@@ -141,10 +141,13 @@ main section.first_view {
 main section.first_view > div {
     background-color: #88e7ce;
     padding-top: 3em;
+    overflow: hidden;
 }
 main section.first_view img {
     width: 100%;
-    margin-left: 1em;
+    bottom: -1em;
+    left: 1em;
+    position: relative;
 }
 main section.first_view h2 {
     align-self: stretch;
@@ -254,10 +257,10 @@ main section.plan div:last-of-type {
 }
 main section.plan div img {
     margin-top: 1.5em;
-    margin-left: 2em;
     width: 60%;
     position: relative;
-    bottom: -5px;
+    bottom: -0.5em;
+    left: 2em;
 }
 main section.plan div p:first-of-type {
     margin-bottom: 4em;
