@@ -1,6 +1,7 @@
 /* 共通 css */
 body {
     margin: unset;
+    font-family: "AvenirNext", "Lato", "Hirago KakuGothic ProN", Meiryo, sans-serif;
 }
 ul {
     list-style: none;
