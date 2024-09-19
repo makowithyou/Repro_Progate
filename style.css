@@ -27,6 +27,12 @@ a.white {
     color: #2b546a;
     background-color: #f0f4f9;
 }
+section {
+    padding-top: 2em;
+    padding-right: 1em;
+    padding-bottom: 2em;
+    padding-left: 1em;
+}
 /* 文字サイズ・色 */
 h1, h2, h3, summary {
     text-align: center;
@@ -46,12 +52,7 @@ p {
 details, summary {
     font-size: 12px;
 }
-section {
-    padding-top: 2em;
-    padding-right: 1em;
-    padding-bottom: 2em;
-    padding-left: 1em;
-}
+
 
 /* 狭い画面向けの既定の CSS レイアウト値 */
 header {
@@ -84,9 +85,14 @@ header nav ul li:first-of-type {
 }
 header nav details summary {
     list-style: unset;
+    display: flex;
 }
 header nav details summary::after {
-    content: "▼";
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font: var(--fa-font-solid);
+    content: "\f0dd";
     font-size: 10px;
     margin-left: 0.5em;
 }
@@ -280,6 +286,14 @@ main section.plan div p span.yen {
 main section.plan div p span.price {
     font-size: 2em;
 }
+main section.plan a::after {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font: var(--fa-font-solid);
+    content: "\f08e";
+    margin-left: 0.5em;
+}
 main section.app p {
     text-align: center;
     margin-bottom: 3em;
@@ -350,11 +364,12 @@ footer div.app {
     align-items: center;
 }
 footer div.app img:first-child {
-    width:  135px;;
+    width:  135px;
 }
 footer div.app p {
     font-size: 1em;
-    margin: unset;
+    color: #2b546a;
+    opacity: 0.7;
 }
 footer div.app div.app-badges {
     display: flex;
@@ -363,6 +378,10 @@ footer div.app div.app-badges {
 footer div.app div.app-badges img {
     width: 35%;
     object-fit: contain;
+}
+footer div.app div.app-badges img:first-of-type {
+    width: 28%;
+    padding-right: 1em;
 }
 footer div.about {
     text-align: center;
@@ -378,6 +397,7 @@ footer div.about ul li {
 }
 footer div.about ul a {
     color: #2b546a;
+    font-size: 14px;
 }
 footer div.related_services {
     text-align: center;
@@ -394,9 +414,13 @@ footer div.related_services ul li {
 footer div.related_services ul li a p {
     letter-spacing: 0.1em;
     margin: unset;
+    font-size: 12px;
 }
 footer div.related_services ul li a p:first-of-type {
     color:#2b546a;
+}
+footer div.related_services ul li a p:last-of-type {
+    opacity: 0.7;
 }
 footer div.corporate_services {
     text-align: center;
@@ -410,6 +434,8 @@ footer div.corporate_services a p:first-of-type {
 }
 footer div.corporate_services a p:last-of-type {
     margin-bottom: 4em;
+    font-size: 12px;
+    opacity: 0.7;
 }
 footer div.corporate_services a img {
     padding-top: 1em;
@@ -437,6 +463,11 @@ footer div.links img {
     margin-top: 2em;
     margin-bottom: 1em;
     width: 15px;
+}
+footer div.links img:last-of-type {
+    margin-left: 1em;
+    background-color: #2b546a;
+    border-radius: 50%;
 }
 footer p:last-of-type {
     text-align: center;
