@@ -56,6 +56,7 @@ details, summary {
 
 /* 狭い画面向けの既定の CSS レイアウト値 */
 header {
+    z-index: 1;
     position: fixed;
     background-color: #ffff;
     width: 100%;
@@ -473,6 +474,26 @@ footer p:last-of-type {
     text-align: center;
     color: #2b546a;
     font-size: xx-small;
+}
+a.qa {
+    position: fixed;
+    bottom: 0;
+    right: 1em;
+    color: #fff;
+    background-color: #fc5476;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding-top: 1em;
+    padding-right: 1.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1.5em;
+}
+a.qa::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font: var(--fa-font-solid);
+    content: "\f059";
 }
 
 @media (min-width: 480px) {
