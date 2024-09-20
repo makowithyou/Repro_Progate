@@ -84,7 +84,8 @@ header nav ul {
 header nav ul li:first-of-type {
     display: none;
 }
-header nav details summary {
+header nav details summary,
+header nav details summary::-webkit-details-marker {
     list-style: none;
     display: flex;
 }
