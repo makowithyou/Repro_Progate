@@ -86,7 +86,7 @@ header nav ul li:first-of-type {
 }
 header nav details summary {
     list-style: none;
-    /* display: flex; */
+    display: flex;
 }
 header nav details summary::after {
     display: inline-block;
