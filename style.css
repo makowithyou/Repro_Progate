@@ -84,10 +84,13 @@ header nav ul {
 header nav ul li:first-of-type {
     display: none;
 }
-header nav details summary,
-header nav details summary::-webkit-details-marker {
+header nav details summary {
     list-style: none;
     display: flex;
+}
+/* Safari/Opera */
+header nav details summary::-webkit-details-marker {
+	display: none;
 }
 header nav details summary::after {
     display: inline-block;
