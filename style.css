@@ -86,7 +86,7 @@ header nav ul li:first-of-type {
 }
 header nav details summary {
     list-style: none;
-    display: flex;
+    /* display: flex; */
 }
 /* Safari/Opera */
 header nav details summary::-webkit-details-marker {
@@ -97,7 +97,7 @@ header nav details summary::after {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     font: var(--fa-font-solid);
-    content: "\f0dd";
+    content: "\f0d7";
     font-size: 10px;
     margin-left: 0.5em;
 }
