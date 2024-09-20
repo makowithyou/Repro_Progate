@@ -86,7 +86,8 @@ header nav ul li:first-of-type {
 }
 header nav details summary {
     list-style: none;
-    /* display: flex; */
+    display: flex;
+    align-items: center;
 }
 /* Safari/Opera */
 header nav details summary::-webkit-details-marker {
