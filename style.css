@@ -166,7 +166,7 @@ main section.first_view h2 {
     align-self: stretch;
     margin-top: 2em;
     margin-bottom: unset;
-    text-align-last: justify;
+    text-align: start;
     padding-left: 1em;
     padding-right: 1em;
     font-size: 1.5em;
@@ -176,7 +176,6 @@ main section.about div.overflow-x-wrap {
     scrollbar-width: none;
 }
 main section.about img {
-    overflow-x: scroll;
     width: 150%;
 }
 main section.about h2 {
