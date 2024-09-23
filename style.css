@@ -34,6 +34,18 @@ section {
     padding-bottom: 2em;
     padding-left: 1em;
 }
+.size_sp {
+    display: block !important;
+}
+.size_480 {
+    display: none !important;
+}
+.size_800 {
+    display: none  !important;
+}
+.size_1100 {
+    display: none  !important;
+}
 
 /* バッチロゴガイドラインより
 バッジの高さ：40px以上
@@ -72,7 +84,6 @@ header {
     position: fixed;
     background-color: #f9fbfe;
     width: 100%;
-    height: 60px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
@@ -81,9 +92,6 @@ header {
     padding-right: 1em;
     padding-bottom: 0.7em;
     padding-left: 1em;
-}
-header img.logo_pc {
-    display: none;
 }
 header img.logo_sp {
     width: 18px;
@@ -159,9 +167,9 @@ main section.first_view > div {
 }
 main section.first_view img {
     width: 100%;
-    bottom: -1em;
-    left: 1em;
-    position: relative;
+    display: block;
+    box-sizing: border-box;
+    padding-left: 1em;
 }
 main section.first_view h2 {
     align-self: stretch;
@@ -188,42 +196,52 @@ main section.about p {
     padding-bottom: 4em;
 }
 main section.success_story {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     background-color: #2b546a;
+    padding-bottom: 3em;
 }
 main section.success_story h2 {
+    width: 100%;
     color: #ffff;
     margin-bottom: unset;
 }
 main section.success_story > p {
+    width: 100%;
     color: #ffff;
     text-align: center;
     line-height: 2em;
-    letter-spacing: 0.1em;
     margin-bottom: 3em;
 }
 main section.success_story div.box {
+    width: 100%;
+    box-sizing: border-box;
     background-color: #fff;
     border-radius: 10px;
+    margin-bottom: 1em;
+}
+main section.success_story div.box a {
+    display: flex;
+    flex-direction: column;
     padding-top: 0.5em;
     padding-right: 1em;
-    padding-bottom: 1em;
+    padding-bottom: 1.5em;
     padding-left: 1em;
-    margin-bottom: 1em;
 }
 main section.success_story div.box:nth-of-type(n + 4) {
     display: none;
 }
 main section.success_story div.box h3 {
+    margin-bottom: 1.5em;
     font-size: 14px;
     text-align: start;
-    line-height: 1.5em;
-    letter-spacing: 0.4px;
 }
 main section.success_story div.box div.img-names {
     display: flex;
     align-items: center;
 }
-main section.success_story  div.box div.img-names img {
+main section.success_story  img {
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -242,7 +260,10 @@ main section.success_story div.box div.img-names div.name p {
 main section.success_story div.box div.img-names div.name p:first-child {
     font-size: 14px;
 }
-main section.success_story a {
+main section.success_story div.box div.img-names div.name p:last-child {
+    font-size: 10px;
+}
+main section.success_story a.button {
     margin-top: 1em;
     font-size: 12px;
     padding-right: 2em;
@@ -286,6 +307,7 @@ main section.plan div p {
 }
 main section.plan p:last-of-type {
     font-size: 14px;
+    margin-top: 0.5em;
 }
 main section.plan div p span.yen {
     font-size: 1.5em;
@@ -306,9 +328,9 @@ main section.app p {
 main section.app div {
     background-color: #90c3f0;
     padding-top: 2em;
-    padding-right: 2em;
+    padding-right: 1em;
     padding-bottom: 2em;
-    padding-left: 2em;
+    padding-left: 1em;
     border-radius: 5px;
 }
 main section.app h3 {
@@ -325,17 +347,30 @@ main section.app img.app_image {
 }
 main section.app div.app-badges {
     padding: unset;
+    display: flex;
 }
 main section.last_view {
     background-color: #ffff;
     align-items: baseline;
-    padding-right: 2em;
-    padding-left: 2em;
+    padding-top: 3em;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+}
+main section.last_view h2 {
+    font-size: 19px;
+    text-align: start;
 }
 main section.last_view p {
     line-height: 2em;
 }
+main section.CAT_bottom {
+    padding-top: 3em;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+    padding-bottom: 5em;
+}
 main section.CAT_bottom p {
+    text-align: center;
     margin-bottom: 2em;
 }
 main section.CAT_bottom a {
@@ -345,9 +380,10 @@ main section.CAT_bottom a {
 main div.sns  {
     display: flex;
     justify-content: center;
-    margin-top: 4em;
+    padding-top: 2em;
     padding-bottom: 2em;
     border-bottom: solid 1px #eeeff1;
+    background-color: #ffff;
 }
 main div.sns img {
     width: 20px;
@@ -355,6 +391,10 @@ main div.sns img {
 }
 main div.sns img:first-of-type {
     padding-right: 2em;
+}
+footer {
+    background-color: #ffff;
+    padding-bottom: 3em;
 }
 footer div.app {
     display: flex;
@@ -428,6 +468,8 @@ footer div.corporate_services a p:last-of-type {
     margin-bottom: 4em;
     font-size: 12px;
     opacity: 0.7;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
 }
 footer div.corporate_services a img {
     width: 60%;
@@ -444,13 +486,21 @@ footer div.links {
 footer div.links ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+}
+footer div.links ul li {
+    padding-bottom: 1em;
+}
+footer div.links ul li:not(:first-of-type) {
+    padding-left: 1em;
 }
 footer div.links ul li a {
     color: #2b546a;
 }
 footer div.links img {
-    margin-top: 2em;
+    margin-top: 1em;
     margin-bottom: 1em;
     width: 15px;
 }
@@ -463,9 +513,6 @@ footer p:last-of-type {
     text-align: center;
     color: #2b546a;
     font-size: xx-small;
-}
-footer {
-    padding-bottom: 3em;
 }
 a.qa {
     position: fixed;
@@ -482,13 +529,148 @@ a.qa {
 }
 
 @media (min-width: 480px) {
-  /* 中型の画面向けの CSS */
+/* 中型の画面向けの CSS */
+.size_sp {
+    display: none !important;
+}
+.size_480 {
+    display: block !important;
+}
+main section.app {
+    padding-bottom: 4em;
+}
+main section.CAT_bottom {
+    padding-top: 4em;
+    padding-bottom: 6em;
+}
 }
 
 @media (min-width: 800px) {
   /* 広い画面向けの CSS */
+.size_480 {
+    display: none !important;
+}
+.size_800 {
+    display: block !important;
+}
+
+section {
+    /* padding-top: 2em; */
+    padding-right: 2em;
+    /* padding-bottom: 2em; */
+    padding-left: 2em;
+}
+header {
+    padding-top: 1em;
+    padding-right: 2em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+}
+header nav ul li:first-of-type {
+    display: block;
+}
+header nav ul li a,
+header nav details summary {
+    font-size: 14px;
+}
+header nav ul li a.red {
+    font-size: 0.7em;
+}
+main section.CAT_top h1 {
+    font-size: 48px;
+    margin-bottom: unset;
+}
+main section.CAT_top p {
+    font-size: 1em;
+}
+main section.CAT_top a.button {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-size: 1em;
+}
+main section.first_view h2 {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+main section.first_view > div {
+    padding-top: 5em;
+}
+main section.first_view img {
+    padding-right: 2em;
+    padding-left: 2em;
+}
+main section.about img {
+    width: 100%;
+}
+main section.about h2 {
+    text-align: center;
+    font-size: 2em;
+}
+main section.about p {
+    text-align: center;
+    font-size: 1em;
+    letter-spacing: unset;
+    margin: unset;
+}
+main section.success_story {
+    padding-top: 4em;
+    padding-bottom: 6em;
+}
+main section.success_story h2 {
+    font-size: 2em;
+}
+main section.success_story > p {
+    font-size: 1em;
+}
+main section.success_story div.box {
+    width: 48%;
+    margin-bottom: 2em;
+}
+main section.success_story div.box:nth-last-of-type(-n+2) {
+    margin-bottom: 4em;
+}
+main section.success_story div.box:nth-of-type(n + 4) {
+    display: block;
+}
+main section.success_story div.box a {
+    align-items: center;
+    padding-top: 3em;
+    padding-right: 2em;
+    padding-bottom: 3em;
+    padding-left: 2em;
+}
+main section.success_story img {
+    width: 100px;
+    height: 100px;
+    margin: unset;
+}
+main section.success_story div.box h3 {
+    margin-top: 3em;
+    margin-bottom: 2em;
+    text-align: center;
+    font-size: 1.3em;
+}
+main section.success_story div.box div.img-names div.name {
+    align-items: center;
+}
+main section.success_story div.box div.img-names div.name p:first-child {
+    font-size: 1.3em;
+}
+main section.success_story a.button {
+    font-size: 1em;
+    margin: 0 auto;
+    padding-right: 4em;
+    padding-left: 4em;
+}
 }
 
 @media (min-width: 1100px) {
   /* 本当に広い画面向けの CSS */
+.size_800 {
+    display: none;
+}
+.size_1100 {
+    display: block;
+}
 }
