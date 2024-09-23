@@ -275,7 +275,7 @@ main section.plan {
 }
 main section.plan div {
     background-color: #f0f4f9;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 100%;
     padding-top: 2em;
     padding-bottom: 1em;
@@ -291,10 +291,9 @@ main section.plan div:last-of-type {
 }
 main section.plan div img {
     margin-top: 1.5em;
-    width: 60%;
-    position: relative;
-    bottom: -0.5em;
-    left: 2em;
+    width: 75%;
+    display: block;
+    padding-left: 1em;
 }
 main section.plan div p:first-of-type {
     margin-bottom: 4em;
@@ -315,8 +314,12 @@ main section.plan div p span.yen {
 main section.plan div p span.price {
     font-size: 2em;
 }
+main section.plan a {
+    display: flex;
+    align-items: center;
+}
 main section.plan i {
-    color: #0070d2;
+    padding-left: 0.5em;
 }
 main section.app {
     padding-bottom: 3em;
@@ -402,7 +405,9 @@ footer div.app {
     align-items: center;
 }
 footer div.app img.Progate_logo {
-    width:  135px;
+    width: 130px;
+    padding-top: 3em;
+    padding-bottom: 3em;
 }
 footer div.app p {
     font-size: 1em;
@@ -536,6 +541,9 @@ a.qa {
 .size_480 {
     display: block !important;
 }
+main section.plan div img {
+    width: 60%;
+}
 main section.app {
     padding-bottom: 4em;
 }
@@ -662,6 +670,176 @@ main section.success_story a.button {
     margin: 0 auto;
     padding-right: 4em;
     padding-left: 4em;
+}
+main section.plan {
+    padding-top: 6em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+main section.plan div:first-of-type {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-top: 3em;
+    padding-right: 2em;
+    padding-left: 2em;
+    margin-bottom: 2em;
+}
+main section.plan div:not(:first-of-type) {
+    width: 48%;
+    padding-top: 3em;
+}
+main section.plan div img {
+    margin-top: unset;
+    width: 50%;
+    padding-right: 6em;
+    padding-left: unset;
+    box-sizing: border-box;
+}
+main section.plan h2 {
+    text-align: start;
+    font-size: 2em;
+    width: 50%;
+}
+main section.plan h3 {
+    font-size: 2em;
+}
+main section.plan div p {
+    font-size: 1em;
+}
+main section.plan div p:first-of-type {
+    margin-bottom: 3em;
+}
+main section.plan div p:last-of-type {
+    font-size: 1em;
+}
+main section.plan div p span.yen {
+    font-size: 2em;
+}
+main section.plan div p span.price {
+    font-size: 3em;
+}
+main section.plan a {
+    font-size: 1em;
+    width: 100%;
+    margin-top: 1em;
+}
+main section.app {
+    padding-bottom: 6em;
+}
+main section.app h2 {
+    font-size: 2em;
+}
+main section.app p {
+    font-size: 1em;
+    margin-top: unset;
+}
+main section.app div {
+    padding-right: 2em;
+    padding-left: 2em;
+}
+main section.app img.app_image {
+    width: 50%;
+    height: 320px;
+    object-fit: contain;
+    float: right;
+    padding-top: 3em;
+}
+main section.app h3 {
+    width: 40%;
+    font-size: 1.1em;
+}
+main section.app p {
+    width: 40%;
+    font-size: 0.8em;
+}
+main section.last_view {
+    align-items: center;
+    padding-top: 6em;
+    padding-bottom: 6em;
+}
+main section.last_view h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+main section.last_view p {
+    font-size: 1em;
+    text-align: center;
+}
+main section.CAT_bottom {
+    padding-top: 6em;
+    padding-bottom: 7em;
+}
+main section.CAT_bottom h2 {
+    font-size: 2em;
+}
+main section.CAT_bottom p {
+    font-size: 1em;
+    margin-top: unset;
+}
+main section.CAT_bottom a {
+    font-size: 1em;
+    padding-right: 2em;
+    padding-left: 2em;
+}
+main div.sns {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+main div.sns img{
+    width: 25px;
+    height: 25px;
+}
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 3em;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+footer p {
+    margin-top: unset;
+}
+footer div:nth-of-type(-n + 4) {
+    width: 25%;
+    padding-top: unset;
+}
+footer div.app img.Progate_logo {
+    padding-top: unset;
+    padding-bottom: unset;
+}
+footer div.app p {
+    text-align: start;
+}
+footer div.about {
+    padding-top: unset;
+}
+footer div.links {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
+footer div.links ul {
+    padding-right: 1em;
+    padding-left: unset;
+}
+footer div.links ul li {
+    padding-right: unset;
+    padding-left: unset;
+}
+footer div.links ul li {
+    padding-bottom: unset;
+}
+footer div.links img {
+    margin-top: unset;
+    margin-bottom: unset;
+}
+footer div a {
+    width: 100%;
 }
 }
 
