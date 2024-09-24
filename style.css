@@ -914,4 +914,10 @@ footer div a {
 .size_1100 {
     display: block;
 }
+header img.size_800 {
+    display: none!important;
+}
+main section.success_story div.box {
+    width: 30%;
+}
 }
