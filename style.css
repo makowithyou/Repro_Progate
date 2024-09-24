@@ -796,17 +796,18 @@ main div.sns img{
 footer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     padding-top: 3em;
     padding-right: 1em;
     padding-left: 1em;
 }
 footer p {
+    width: 100%;
     margin-top: unset;
 }
-footer div:nth-of-type(-n + 4) {
-    width: 25%;
-    padding-top: unset;
+footer div.app {
+    align-items: flex-start;
+    width: 20%;
 }
 footer div.app img.Progate_logo {
     padding-top: unset;
@@ -814,9 +815,68 @@ footer div.app img.Progate_logo {
 }
 footer div.app p {
     text-align: start;
+    margin-top: 2em;
+}
+footer div.app div.app-badges {
+    flex-direction: column;
+    width: auto;
+    align-items:flex-start
+}
+footer div.app div.app-badges img:first-of-type {
+    padding-right: unset;
+    padding-bottom: 0.5em;
 }
 footer div.about {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 10%;
     padding-top: unset;
+}
+footer div.about p {
+    text-align: start;
+}
+footer div.about ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+footer div.about ul li {
+    text-align: start;
+}
+footer div.related_services {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 20%;
+    padding-top: unset;
+}
+footer div.related_services p {
+    text-align: start;
+}
+footer div.related_services ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+footer div.related_services ul li p {
+    text-align: start;
+}
+footer div.corporate_services {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 30%;
+    padding-top: unset;
+}
+footer div.corporate_services p {
+    text-align: start;
+}
+footer div.corporate_services a p {
+    text-align: start;
+}
+footer div.corporate_services a img {
+    width: 100%;
 }
 footer div.links {
     width: 100%;
@@ -833,6 +893,9 @@ footer div.links ul li {
 }
 footer div.links ul li {
     padding-bottom: unset;
+}
+footer div.links div.sns {
+    width: auto;
 }
 footer div.links img {
     margin-top: unset;
