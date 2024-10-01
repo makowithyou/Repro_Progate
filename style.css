@@ -788,6 +788,9 @@ main section.success_story h2 {
 main section.success_story > p {
     font-size: 1em;
 }
+main section.success_story div.box:nth-last-of-type(-n + 3) {
+    margin-bottom: 4em;
+}
 main section.plan {
     padding-top: 6em;
 }
@@ -982,5 +985,25 @@ main section.first_view img {
 }
 main section.success_story div.box {
     width: 30%;
+}
+main section.plan {
+    justify-content: center;
+}
+main section.plan div:nth-of-type(2) {
+    margin-right: 50px;
+}
+main section.plan div:not(:first-of-type) {
+    max-width: 475px;
+}
+main section.plan a {
+    max-width: 1000px;
+}
+main section.plan a + p {
+    max-width: 1000px;
+    width: 100%;
+}
+footer {
+    max-width: 1000px;
+    margin: 0 auto;
 }
 }
