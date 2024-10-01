@@ -979,31 +979,19 @@ div.container {
     max-width: 1000px;
     margin: 0 auto;
 }
-main section.first_view img {
+main section.CAT_top,
+main section.first_view img,
+main section.about,
+main section.plan,
+main section.app,
+main section.last_view,
+main section.CAT_bottom,
+div.sns,
+footer {
     max-width: 1000px;
     margin: 0 auto;
 }
 main section.success_story div.box {
     width: 30%;
-}
-main section.plan {
-    justify-content: center;
-}
-main section.plan div:nth-of-type(2) {
-    margin-right: 50px;
-}
-main section.plan div:not(:first-of-type) {
-    max-width: 475px;
-}
-main section.plan a {
-    max-width: 1000px;
-}
-main section.plan a + p {
-    max-width: 1000px;
-    width: 100%;
-}
-footer {
-    max-width: 1000px;
-    margin: 0 auto;
 }
 }
