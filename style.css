@@ -740,9 +740,7 @@ main section.CAT_bottom a {
   /* 広い画面向けの CSS */
 
 section {
-    /* padding-top: 2em; */
     padding-right: 2em;
-    /* padding-bottom: 2em; */
     padding-left: 2em;
 }
 header {
